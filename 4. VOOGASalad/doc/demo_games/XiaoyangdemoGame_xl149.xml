@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><GameConfiguration><GameTitle/><GameCondition><Type>CurrentLevelWonCondition</Type><Parameters><Classification>CONTINUOUS</Classification></Parameters><Actions><Action><Type>AdvanceToNextLevelAction</Type></Action></Actions><ConditionId>0</ConditionId></GameCondition><SpritePrototype><Strategies><EffectStrategy><Type>ChunkHealthEffect</Type><Parameters><DamageValue>15</DamageValue></Parameters></EffectStrategy><MovementStrategy><Type>DirectedDistanceMovement</Type><Parameters><Speed>2</Speed><Distance>150</Distance></Parameters></MovementStrategy></Strategies><Properties><Archetype>PROJECTILE</Archetype><ImagePath>BlueDevilBullet.png</ImagePath><PrototypeId>0</PrototypeId><Height>30</Height><Width>30</Width></Properties></SpritePrototype><SpritePrototype><Strategies><HealthStrategy><Type>Health</Type><Parameters><HealthValue>100</HealthValue></Parameters></HealthStrategy><CostStrategy><Type>BasicCost</Type><Parameters><CreateCost>25</CreateCost><DestroyCost>87</DestroyCost></Parameters></CostStrategy><AttackStrategy><Type>ShootingAttack</Type><Parameters><AttackRate>0.5</AttackRate><BulletPrototypeId>0</BulletPrototypeId></Parameters></AttackStrategy><RotationStrategy><Type>NoRotation</Type><Parameters/></RotationStrategy></Strategies><Properties><Archetype>TOWER</Archetype><ImagePath>DukeChapel.jpg</ImagePath><PrototypeId>1</PrototypeId><Height>66</Height><Width>66</Width></Properties></SpritePrototype><SpritePrototype><Strategies><HealthStrategy><Type>Health</Type><Parameters><HealthValue>100</HealthValue></Parameters></HealthStrategy><CostStrategy><Type>BasicCost</Type><Parameters><CreateCost>33</CreateCost><DestroyCost>100</DestroyCost></Parameters></CostStrategy><AttackStrategy><Type>MultipleGunsAttack</Type><Parameters><ShootingPositions>10,100,170</ShootingPositions><AttackRate>0.9</AttackRate><BulletPrototypeId>0</BulletPrototypeId></Parameters></AttackStrategy><RotationStrategy><Type>FullRotation</Type><Parameters><RotationSpeed>30</RotationSpeed></Parameters></RotationStrategy></Strategies><Properties><Archetype>TOWER</Archetype><ImagePath>BlueDevilTower.jpg</ImagePath><PrototypeId>2</PrototypeId><Height>70</Height><Width>70</Width></Properties></SpritePrototype><SpritePrototype><Strategies><HealthStrategy><Type>Health</Type><Parameters><HealthValue>100</HealthValue></Parameters></HealthStrategy><CostStrategy><Type>BasicCost</Type><Parameters><CreateCost>25</CreateCost><DestroyCost>73</DestroyCost></Parameters></CostStrategy><MovementStrategy><Type>PathMovement</Type><Parameters><Path>0,0</Path><Speed>101</Speed></Parameters></MovementStrategy><HealthStrategy><Type>Health</Type><Parameters><HealthValue>100</HealthValue></Parameters></HealthStrategy><CostStrategy><Type>BasicCost</Type><Parameters><CreateCost>25</CreateCost><DestroyCost>73</DestroyCost></Parameters></CostStrategy><MovementStrategy><Type>PathMovement</Type><Parameters><Path>0,0</Path><Speed>101</Speed></Parameters></MovementStrategy></Strategies><Properties><Archetype>ENEMY</Archetype><ImagePath>unc2.jpg</ImagePath><PrototypeId>3</PrototypeId><Height>101</Height><Width>88</Width></Properties></SpritePrototype><SpritePrototype><Strategies><HealthStrategy><Type>Health</Type><Parameters><HealthValue>100</HealthValue></Parameters></HealthStrategy><CostStrategy><Type>BasicCost</Type><Parameters><CreateCost>25</CreateCost><DestroyCost>55</DestroyCost></Parameters></CostStrategy><MovementStrategy><Type>PathMovement</Type><Parameters><Path>0,0</Path><Speed>127</Speed></Parameters></MovementStrategy><HealthStrategy><Type>Health</Type><Parameters><HealthValue>100</HealthValue></Parameters></HealthStrategy><CostStrategy><Type>BasicCost</Type><Parameters><CreateCost>25</CreateCost><DestroyCost>55</DestroyCost></Parameters></CostStrategy><MovementStrategy><Type>PathMovement</Type><Parameters><Path>0,0</Path><Speed>127</Speed></Parameters></MovementStrategy></Strategies><Properties><Archetype>ENEMY</Archetype><ImagePath>unc3.jpg</ImagePath><PrototypeId>4</PrototypeId><Height>70</Height><Width>70</Width></Properties></SpritePrototype><SpritePrototype><Strategies><HealthStrategy><Type>Health</Type><Parameters><HealthValue>58</HealthValue></Parameters></HealthStrategy><CostStrategy><Type>BasicCost</Type><Parameters><CreateCost>25</CreateCost><DestroyCost>76</DestroyCost></Parameters></CostStrategy><MovementStrategy><Type>PathMovement</Type><Parameters><Path>0,0</Path><Speed>203</Speed></Parameters></MovementStrategy><HealthStrategy><Type>Health</Type><Parameters><HealthValue>58</HealthValue></Parameters></HealthStrategy><CostStrategy><Type>BasicCost</Type><Parameters><CreateCost>25</CreateCost><DestroyCost>76</DestroyCost></Parameters></CostStrategy><MovementStrategy><Type>PathMovement</Type><Parameters><Path>0,0</Path><Speed>203</Speed></Parameters></MovementStrategy></Strategies><Properties><Archetype>ENEMY</Archetype><ImagePath>plant.png</ImagePath><PrototypeId>5</PrototypeId><Height>70</Height><Width>70</Width></Properties></SpritePrototype><Level>
+    <AvailablePrototypes>0 1 2 3 4 5</AvailablePrototypes>
+    <BackgroundImage>dukemap.JPG</BackgroundImage>
+    <Lives>10</Lives>
+    <Resources>803</Resources>
+    <LevelId>1</LevelId>
+    <Condition>
+        <Type>OnscreenArchetypeCountCondition</Type>
+        <ConditionId>0</ConditionId>
+        <Actions>
+            <Action>
+                <Type>SpawnWaveAction</Type>
+            </Action>
+        </Actions>
+        <Parameters>
+            <MarkedCount>0</MarkedCount>
+            <Archetype>ENEMIES</Archetype>
+            <Classification>ONETIME</Classification>
+        </Parameters>
+    </Condition>
+    <Condition>
+        <Type>TemporalCondition</Type>
+        <ConditionId>1</ConditionId>
+        <Actions>
+            <Action>
+                <Type>SpawnWaveAction</Type>
+            </Action>
+        </Actions>
+        <Parameters>
+            <MarkedTime>10</MarkedTime>
+            <Classification>ONETIME</Classification>
+        </Parameters>
+    </Condition>
+    <Condition>
+        <Type>EnemiesClearedCondition</Type>
+        <ConditionId>2</ConditionId>
+        <Actions>
+            <Action>
+                <Type>WinLevelAction</Type>
+            </Action>
+        </Actions>
+        <Parameters>
+            <Classification>ONETIME</Classification>
+        </Parameters>
+    </Condition>
+    <Wave>
+        <Queue>4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4</Queue>
+        <Interval>3</Interval>
+        <SpawnPointX>89</SpawnPointX>
+        <SpawnPointY>17</SpawnPointY>
+        <Path>
+            193,127;150,219;120,300;83,421;85,573;156,589;252,659;297,539;192,468;260,359;295,325;315,322;337,385;376,448
+        </Path>
+    </Wave>
+    <Wave>
+        <Queue>3 3 3 3 3 3 3 3 3 3 3 5 5 5 5 5 5</Queue>
+        <Interval>3</Interval>
+        <SpawnPointX>228</SpawnPointX>
+        <SpawnPointY>37</SpawnPointY>
+        <Path>
+            338,105;401,154;515,268;616,293;612,375;605,405;446,353;431,395;427,430;472,441;491,446;496,409;546,436;571,455;558,522;596,537;587,601;490,580;498,538;447,566;387,517
+        </Path>
+    </Wave>
+</Level>
+    <LevelSequence>1</LevelSequence>
+</GameConfiguration>

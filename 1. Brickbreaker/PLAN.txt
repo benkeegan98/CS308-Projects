@@ -1,0 +1,89 @@
+In researching the different variations of the classic Breakout game, I really liked Jet Ball because of the variety of
+different power ups available - watching this game gave me a bit of inspiration and a jolt of creativity that I
+channelled into my own game plan.
+
+ - Game and Levels:
+
+For my breakout variation, I intend to do a soccer game, specifically themed around Liverpool, my home town team.
+The background will be a soccer field, and the arena walls will be lined in fans to create a stadium effect. Liverpool's
+color is red, so the crowd will be red, and the user's paddle will be red. The ball will be a soccer ball.
+I want my different levels to represent a game against one of Europe's top teams. Liverpool are the current European
+Champions, so I want each level to be the best team from each top league in Europe, before the final.
+
+Level 1 - Knockout Round 1 -- Germany - Borussia Dortmund -- I was going to use Bayern Munich, but they are also red. Dortmund are the
+    second best team and wear yellow, so this is a good contrast to the red of Liverpool. Yellow and black themed bricks
+
+Level 2 - Knockout Round 2 -- France - PSG -- red and blue themed bricks
+
+Level 3 - Quarter-Final -- Italy - Juventus -- black and white themed bricks
+
+Level 4 - Semi-Final -- Spain - Barcelona -- red, blue, yellow themed bricks
+
+Level 5 - Final -- England - Manchester City -- light blue and white themed bricks
+
+If you beat Level 5, you will win the Champions League trophy
+
+To beat a level, not only do you have to clear all of the bricks, but you also have to score a goal. The goal will be at
+top center, and will be defended by a goalkeeper who will be the hardest brick to break (4 hits)
+
+The user will have 3 lives per level - warning, yellow card, red card - when you lose a life, whichever icon I use to
+represent a life, I will replace with a warning icon (!), yellow card, then when you receive a red card you start over
+over again
+
+ - Bricks:
+
+  Bricks will be colored differently by round depending on who the opponent is
+
+  I will have a goal at the top defended by a goalkeeper - this is the toughest brick to break - 4 hits and will have the
+goalkeepers face on it
+  I will have a soccer formation layout of 10 other player bricks - these will each take 3 hits to break and will have the
+players face on it
+  I will have smaller (filler) team bricks in the gaps between players, and also as a line in front of the player bricks that one has to
+break through before taking on the actual opposing team - these will each take 2 (maybe 1 hit) hits to break, but I will
+gauge this as I build to see how varying the hits to break these bricks will optimize gameplay. These bricks will just be
+colored based on the teams colors
+
+Some player bricks can also drop anti-powerup hits. Some will be a faster balls (which will be harder to defend
+against) and some will be skulls that can make the user lose a life if they catch it.
+
+
+ - Power Ups:
+
+Power ups will fall down from certain bricks and need to be caught by the paddle to activate. They will be represented
+by a Liverpool player's face:
+
+Mo Salah: Fireball powerup - Mo is Liverpool's top scorer, and the fireball will be a flaming ball that will break through
+any type of brick regardless of how many hits it takes to break through it normally. May even have it not bounce back
+after it's first collision.
+
+Virgil Van Dijk: Shield powerup - VVD is the best defender, and so catching him will create a shield that stops you from
+losing a life for as long as it lasts - even if you miss the ball with your paddle, I will have some sort of shield design
+that allows the ball to bounce off the bottom boundary
+
+Roberto Firmino: First Touch powerup - Firmino is a skillful Brazilian player and has a great first touch, and so having
+this power up will make the paddle sticky, so you can catch the ball and move the paddle before firing the ball off again.
+Will use space bar to fire.
+
+Andy Robertson: Multiple balls - Robertson is famous for his service and assists, and so catching his powerup will add 2
+new balls.
+
+(Maybe) Sadio Mane: Faster paddle - Mane is one of the fastest players, so if I can add this as an additional powerup,
+then the paddle will be able to move faster.
+
+
+ - Cheat Keys:
+
+ P - Pause game and resume
+ R - Restart level
+ B - Bonus life
+ S - Skip a level
+
+
+ - Extra Feature:
+
+ The extra feature is the Goal. Scoring a goal is an automatic pass to the next round. You must score a goal to reach the
+ next round. You dont have to clear every brick to do this, but you do have to get rid of the goalkeeper, who is guarded
+ by all the other bricks and is the toughest to break overall. I think this is a cool feature because it is relevant to
+ the aim of the game in soccer, so I thought it made sense to add it as a feature here.
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LiveGameEditingRequest>
+    <EditActionType>EditCurrentLevelConditionsAction</EditActionType>
+    <EditableObject>
+        <Condition>
+            <ConditionId>0</ConditionId>
+            <Type>TemporalCondition</Type>
+            <Parameters>
+                <MarkedTime>0</MarkedTime>
+            </Parameters>
+            <Actions>
+                <Action>
+                    <Type>SpawnWaveAction</Type>
+                </Action>
+            </Actions>
+        </Condition>
+    </EditableObject>
+</LiveGameEditingRequest>

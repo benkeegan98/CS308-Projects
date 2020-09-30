@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LiveGameEditingRequest>
+    <EditActionType>EditPrototypeImageViewAction</EditActionType>
+    <EditableObject>
+        <PrototypeId>0</PrototypeId>
+        <EditedField>plant.png</EditedField>
+    </EditableObject>
+</LiveGameEditingRequest>

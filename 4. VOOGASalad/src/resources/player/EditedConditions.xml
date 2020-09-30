@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LiveGameEditingRequest>
+    <EditActionType>EditGameConditionsAction</EditActionType>
+    <EditableObject>
+        <GameCondition>
+            <ConditionId>0</ConditionId>
+            <Type>CurrentLevelWonCondition</Type>
+            <Parameters>
+                <Classification>CONTINUOUS</Classification>
+            </Parameters>
+            <Actions>
+                <Action>
+                    <Type>DoNothingActionForTest</Type>
+                </Action>
+            </Actions>
+        </GameCondition>
+    </EditableObject>
+</LiveGameEditingRequest>

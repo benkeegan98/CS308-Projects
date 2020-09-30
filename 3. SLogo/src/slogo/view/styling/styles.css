@@ -1,0 +1,142 @@
+#color-picker-label {
+  -fx-label-padding: 0 40 15 40;
+}
+
+#color-circle {
+  -fx-translate-y: 10;
+}
+
+#color-picker {
+  -fx-translate-y: 20;
+  -fx-max-width: 150;
+}
+
+#color-picker-pane {
+  -fx-translate-y: -100;
+  -fx-padding: 10 20 50 20;
+  -fx-alignment: center;
+}
+
+#settings-pane {
+  -fx-alignment: center;
+}
+
+#language-pane {
+  -fx-alignment: center;
+  -fx-translate-y: -80;
+  -fx-padding: 10 0 50 0;
+}
+
+#language-label {
+  -fx-label-padding: 0 0 15 0;
+}
+
+#language-combo-box {
+  -fx-max-width: 150;
+}
+
+#turtle-picker-label {
+  -fx-label-padding: 0 30 15 30;
+}
+
+#turtle-picker-combo {
+  -fx-max-width: 150;
+  -fx-translate-y: 15;
+}
+
+#turtle-picker-pane {
+  -fx-padding: 10 0 50 0;
+  -fx-translate-y: -110;
+  -fx-alignment: center;
+}
+
+#history-pane {
+  -fx-pref-height: 500;
+  /*-fx-translate-y: -80;*/
+}
+
+#right-pane {
+  -fx-background-color: #85c5f5;
+  -fx-pref-height: 900;
+  -fx-pref-width: 200;
+}
+
+#right-pane-buttons {
+  -fx-max-width: 200;
+}
+
+#command-pane {
+  -fx-background-color: #85c5f5;
+  -fx-pref-width: 700;
+  -fx-pref-height: 200;
+}
+
+#command-box {
+  -fx-max-width: 500;
+  -fx-max-height: 150;
+  -fx-translate-y: 20;
+  -fx-translate-x: -20;
+}
+
+#variable-box {
+  -fx-max-width: 75;
+  -fx-max-height: 10;
+}
+
+#run-button {
+  -fx-pref-height: 50;
+  -fx-pref-width: 50;
+  -fx-translate-x: 600;
+  -fx-translate-y: 70;
+}
+
+#forward-button {
+  -fx-translate-x: 600;
+  -fx-translate-y: 20;
+  -fx-pref-height: 50;
+  -fx-pref-width: 50;
+}
+
+#backward-button {
+  -fx-translate-x: 600;
+  -fx-translate-y: 120;
+  -fx-pref-height: 50;
+  -fx-pref-width: 50;
+}
+
+#left-button {
+   -fx-translate-x: 550;
+   -fx-translate-y: 70;
+  -fx-pref-height: 50;
+  -fx-pref-width: 50;
+}
+
+#right-button {
+  -fx-translate-x: 650;
+  -fx-translate-y: 70;
+  -fx-pref-height: 50;
+  -fx-pref-width: 50;
+}
+
+#pen-thickness-slider{
+  -fx-translate-y: 30;
+}
+
+#pen-down-checkbox{
+  -fx-translate-y: 20;
+}
+
+#instructions {
+  -fx-translate-y: -40;
+}
+
+#turtle-info-box {
+  -fx-translate-y: -30;
+  -fx-translate-x: 25;
+  -fx-pref-height: 100;
+  -fx-pref-width: 150;
+}
+
+#active-right-pane {
+  -fx-translate-y: 100;
+}
