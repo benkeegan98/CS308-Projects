@@ -2,7 +2,7 @@
 
 A development environment that helps users write SLogo programs.
 
-Contributors: Ben Keegan, Chloe Gura, Jonah Knapp, Junyu Liang
+Personal Contribution: Frontend
 
 ## Timeline
 
@@ -10,13 +10,7 @@ Start Date: October 3, 2019
 
 End Date: October 29, 2019
 
-Hours Spent: 40 hours
-
-## Primary Roles
-
-Ben and Chloe: Frontend
-
-Jonah and Junyu: Backend
+Total Hours Spent: 40 hours
 
 ## Running the Program
 
