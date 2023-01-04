@@ -1,9 +1,9 @@
-simulation
+Simulation
 ====
 
 This project implements a cellular automata simulator.
 
-Names: Ben Keegan, Samantha Whitt, Amber Johnson
+Names: Ben Keegan
 
 ### Running the Program
 
@@ -16,5 +16,5 @@ Interesting data files: xml files in the xml folder (for each simulation)
 Features implemented: play a simulation, change between simulations with buttons, step through a simulation, speed up 
 the simulation via slider, show grid lines if desired, 
 
-Assumptions or Simplifications: We assume that there is no user input besides choice of what we give
+Assumptions or Simplifications: Assume that there is no user input besides choice of what is given
 
